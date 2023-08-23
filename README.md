@@ -3,12 +3,13 @@ Programa para matemáticas discretas
 Explicación 
 Importar bibliotecas:
 
-import networkx as nx
-import matplotlib.pyplot as plt
+    import networkx as nx
+    import matplotlib.pyplot as plt
 //Aquí estamos importando las bibliotecas `networkxnetworkxy matplotlib.pyplot, que se utilizarán para crear y mostrar el gráfico.//
 
 Definición de la clase Grafo:
-class Grafo:
+
+    class Grafo:
     def __init__(self):
         self.grafo = {}
 
@@ -23,7 +24,8 @@ class Grafo:
     # ... (otros métodos)
 //AquíGrafo, que tiene métodos para agregar vértices y aristasDFS, BFSy mostrar_grafoque implementar//
 
-Método mostrar_grafo:
+ Método mostrar_grafo:
+    
     def mostrar_grafo(self):
         G = nx.Graph()
         for vertice, vecinos in self.grafo.items():
@@ -34,9 +36,10 @@ Método mostrar_grafo:
 //Este método crea un objeto `nx.Graph()de NetworkX y agrega aristas a este objeto en función de las conexionesself.grafo. Luego, utilice nx.draw()para visualizar el graplt.show()de Matplotlib.//
 
 Codigo principal:
-if __name__ == "__main__":
-    grafo = Grafo()
 
+    if __name__ == "__main__":
+     grafo = Grafo()
+    
     num_nodos = int(input("Ingrese el número de nodos: "))
     for i in range(num_nodos):
         grafo.agregar_vertice(i)
